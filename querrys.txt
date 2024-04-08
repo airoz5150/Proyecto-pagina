@@ -1,0 +1,29 @@
+create table SergioUsuarios(
+id int not null primary key auto_increment,
+nombre varchar (50) not null,
+apellido  varchar (50) not null,
+direccion varchar (50) not null,
+telefono varchar (50) not null,
+rfc varchar (50) not null,
+correo varchar (50) not null,
+contrasena varchar (50) not null);
+
+create table SergioProducto(
+codigo int not null primary key,
+descripcion varchar (400) not null,
+marca varchar (100) not null,
+model varchar (100) not null,
+categoria varchar (100) not null,
+cantidad int not null,
+precio int not null);
+
+create table SergioFactura (
+     fecha varchar (50) not null,
+     numFactura int not null primary key,
+     razonSocial varchar (100) not null,
+     nomEmpresa varchar (100) not null,
+     direccion varchar (100) not null,
+     ciudad varchar (100) not null,
+     codigoPostal varchar (100) not null,
+     telefono varchar (100) not null,
+     importe int not null);

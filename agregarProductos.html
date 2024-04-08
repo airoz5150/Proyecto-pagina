@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio</title>
+  <link rel="shortcut icon" href="img/descarga.ico" type="image/ico" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="https://kit.fontawesome.com/2ebcc9787c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="social">
+      <div class="social-icons">
+        <a target="_blank" href="https://www.facebook.com/SupermexDigitalMexico"><i class="fa-brands fa-facebook"></i></a>
+        <a target="_blank" href="https://www.instagram.com/supermexdigitalmx?fbclid=IwAR2fRsf0vWvc5p04O5ODlGEonkKEw2blubbhN9SZoL66wXwosZHUlfjdlcE"><i class="fa-brands fa-instagram"></i></a>
+        <a target="_blank" href=""><i class="fa-brands fa-twitter"></i></a>
+        <a target="_blank" href="https://github.com/airoz515"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="nav-logo">
+        <a href="">
+          <img
+            src="https://supermexdigitalmx.vtexassets.com/assets/vtex/assets-builder/supermexdigitalmx.store-theme/3.12.6/brand/supermex_logo___413633ab939cd4e0fa6951cbb5fa49de.png"
+            width="200" height="50" alt="" />
+        </a>
+      </div>
+      <div class="botones">
+        <a href="Inicio.html"><button>inicio</button></a><a href="QuienesSomos.html"><button>Quienes
+            somos</button></a><a href="productos.html"><button>Productos</button></a><a
+          href="ubicacion.html"><button>Ubicación</button></a><a class="objet"
+          href="curriculum.html"><button>Curriculum</button></a>
+      </div>
+      <div class="boton-inicioDeSesion"><a href="inicioDeSesion.html"><button>Inicio De Sesion</button></a>
+      </div>
+    </nav>
+  </header>
+  <form action="insertarProducto.php" method="get" id="formulario-productos" onsubmit="return validar()">
+    <div class="inputs-Productos">
+    <H1>Agregar Productos</H1>
+        <label for="codigo">Codigo <br>
+            <input type="text" name="codigo" id="codigo" required >
+        </label>
+        
+        <label for="descripcion">descripcion <br><input type="text" name="descripcion" id="descripcion" required></label>
+        <label for="marca">marca <br><input type="text" name="marca" id="marca"></label required>
+        <label for="modelo">modelo <br><input type="text" name="modelo" id="modelo"></label required>
+        <label for="categoria">categoria <br><br>
+            <select name="categoria" id="categoria" required>
+            <option value="Tarjetas Madre">Tarjetas Madre</option>
+            <option value="Memorias Ram">Memorias Ram</option>
+            <option value="Discos Duros">Discos Duros</option>
+            <option value="Gabinetes">Gabinetes</option>
+            <option value="Procesadores">Procesadores</option>
+            <option value="Targetas Graficas">Targetas Graficas</option>
+        </select>
+    </label>
+        <label for="cantidad">cantidad <br><input type="number" name="cantidad" id="cantidad" required></label>
+        <label for="precio">precio <br><input type="number" name="precio" id="precio" required></label>
+        <ul class="error" id="error"></ul>
+        <button type="submit" id="agregar" value="agregar" onclick="validar()">Agregar</button>
+        <button type="reset" id="limpiar" value="limpiar">limpiar</button>
+    </div> 
+</form>
+  <script src="agregarProducto.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

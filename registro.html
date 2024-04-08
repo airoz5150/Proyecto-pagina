@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/2ebcc9787c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="img/descarga.ico" type="image/ico" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="social">
+        <div class="social-icons">
+          <a target="_blank" href="https://www.facebook.com/SupermexDigitalMexico"><i class="fa-brands fa-facebook"></i></a>
+          <a target="_blank" href="https://www.instagram.com/supermexdigitalmx?fbclid=IwAR2fRsf0vWvc5p04O5ODlGEonkKEw2blubbhN9SZoL66wXwosZHUlfjdlcE"><i class="fa-brands fa-instagram"></i></a>
+          <a target="_blank" href=""><i class="fa-brands fa-twitter"></i></a>
+          <a target="_blank" href="https://github.com/airoz515"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <nav class="nav">
+        <div class="nav-logo">
+          <a href="">
+            <img
+              src="https://supermexdigitalmx.vtexassets.com/assets/vtex/assets-builder/supermexdigitalmx.store-theme/3.12.6/brand/supermex_logo___413633ab939cd4e0fa6951cbb5fa49de.png"
+              width="200"
+              height="50"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="botones">
+          <a href="Inicio.html"><button>inicio</button></a><a href="QuienesSomos.html"><button>Quienes
+              somos</button></a><a href="productos.html"><button>Productos</button></a><a
+            href="ubicacion.html"><button>Ubicación</button></a><a class="objet"
+            href="curriculum.html"><button>Curriculum</button></a>
+        </div>
+        <div class="boton-inicioDeSesion"><a href="inicioDeSesion.html"><button>Inicio De Sesion</button></a>
+        </div>
+      </nav>
+        <header class="header-registro">
+          <form method="get" action="insertarRegistro.php" id="formulario" onsubmit="return validar()">
+            <h2>Registro</h2>
+            <div class="contenedor-inputs">
+              <div class="input-text">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                <ul class="error" id="errorNombre"></ul>
+                <input type="text" name="apellidos" id="apellidos" placeholder="apellidos" required> 
+                <ul class="error" id="errorApellido"></ul>
+                <input type="text"name="direccion" id="direccion" placeholder="direccion" required>
+                <ul class="error" id="errorDireccion"></ul>
+                <input type="text"name="telefono" id="telefono" placeholder="telefono" required>
+                <ul class="error" id="errorTelefono"></ul>
+                <input type="text"name="RFC" id="rfc" placeholder="rfc" required>
+                <ul class="error" id="errorRFC"></ul>                
+                <h4>correo electronico</h4>
+                <input type="email" name="correo" id="correo" placeholder="ejemplo@email.com" required> 
+                <ul class="error" id="errorCorreo"></ul>
+              <input type="password" name="contrasena" id="contrasena" placeholder="******" required>
+              <ul class="error" id="errorContrasena"></ul>
+              </div>
+              <div>
+                <label for="terminos"><input type="checkbox" name="terminos" id="terminos" required>  
+                  Acepto los terminos y condiciones</label>
+              </div>
+                <ul class="error" id="error"></ul>
+                <button type="submit" class="btn btn-primary btn-lg" value="Registrarse" onclick="validar()" >Registrarse</button> 
+              </div>
+          </form>
+        </header>   
+        <script src="registro.js"></script>
+    </body>
+</html>

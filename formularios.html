@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulario</title>
+  </head>
+  <body>
+    <form name="formulario" method="get">
+      <h1>Datos del Trabajador</h1>
+      <hr>
+      <label for="nombre">Nombre <input type="text" /></label>
+      <h2>domicilio</h2>
+      <label for="domicilio"
+        >calle <input type="text" /> numero<input type="number" /> colonia
+        <input type="text" placeholder="ingresa tu colonia" /></label
+      ><br /><br /><br /><br /><br /><br />
+      <h2>municipio</h2>
+      <label for="municipio">
+        <select name="municipio" id="municipio">
+          <option value="atizapan">atizapan</option>
+          <option value="Acambay">Acambay</option>
+          <option value="Acolman">Acolman</option>
+          <option value="Aculco">Aculco</option>
+          <option value="Almoloya de Alquisiras	">Almoloya de Alquisiras</option>
+          <option value="Almoloya de Juárez	">Almoloya de Juárez</option>
+          <option value="Almoloya del Río	">Almoloya del Río</option>
+          <option value="Chapultepec">Chapultepec</option>
+          <option value="Naucalpan de Juárez	">Naucalpan de Juárez</option>
+          <option value="Nicolás Romero	">Nicolás Romero</option>
+          <option value="">Atlautla</option>
+          Atlautla
+        </select></label
+      >
+      <div>
+        <br>
+        <hr>
+        <h2>salario</h2>
+        <label for="datos-trabajador"
+          ><input type="number" name="horasT" id="horasT" /></label
+        ><br /><br />
+        <label for="tipo-de-hora"
+          >tipo de hora<input type="radio" name="horario" id="horario" />Diurno
+          <input type="radio" name="horario" id="horario" />Nocturno
+          <input type="radio" name="horario" id="horario" />Matutino </label
+        ><br /><br />
+        <label for="salario"
+          >Salario por hora
+          <input type="number" name="salario-hora" id="salario'hora" /></label
+        ><br /><br />
+        <label for="Totales"
+          >Totales <input type="number" name="Total" id="Total"
+        /></label>
+      </div>
+      <br /><br /><hr>
+      <div>
+        <input type="submit" name="enviar" value="calcular" />
+        <input type="reset" name="borrar" value="borrar" />
+        <input type="button" name="enviar" value="salir" />
+      </div>
+    </form>
+  </body>
+</html>

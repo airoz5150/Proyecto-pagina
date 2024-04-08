@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/2ebcc9787c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="img/descarga.ico" type="image/ico" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="social">
+        <div class="social-icons">
+          <a target="_blank" href="https://www.facebook.com/SupermexDigitalMexico"><i class="fa-brands fa-facebook"></i></a>
+          <a target="_blank" href="https://www.instagram.com/supermexdigitalmx?fbclid=IwAR2fRsf0vWvc5p04O5ODlGEonkKEw2blubbhN9SZoL66wXwosZHUlfjdlcE"><i class="fa-brands fa-instagram"></i></a>
+          <a target="_blank" href=""><i class="fa-brands fa-twitter"></i></a>
+          <a target="_blank" href="https://github.com/airoz515"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <nav class="nav">
+        <div class="nav-logo">
+          <a href="">
+            <img
+              src="https://supermexdigitalmx.vtexassets.com/assets/vtex/assets-builder/supermexdigitalmx.store-theme/3.12.6/brand/supermex_logo___413633ab939cd4e0fa6951cbb5fa49de.png"
+              width="200"
+              height="50"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="botones">
+          <a href="Inicio.html"><button>inicio</button></a><a href="QuienesSomos.html"><button>Quienes
+              somos</button></a><a href="productos.html"><button>Productos</button></a><a
+            href="ubicacion.html"><button>Ubicación</button></a><a class="objet"
+            href="curriculum.html"><button>Curriculum</button></a>
+        </div>
+        <div class="boton-inicioDeSesion"><a href="inicioDeSesion.html"><button>Inicio De Sesion</button></a>
+        </div>
+      </nav>
+        <header class="factura-Formulario">
+          <form method="get" action="insertarFactura.php" id="formulario" onsubmit="return validar()">
+            <h2>Registro Factura</h2>
+            <div class="">
+              <div class="input-text">
+                <h3>Supermex Digital S.A de C.V</h3>
+                <label for="fecha">fecha<input type="date" name="fecha" id="fecha" placeholder="fecha" required>
+                </label>
+
+                <input type="text" name="numFactura" id="numFactura" placeholder="numero de factura" required> 
+                <ul class="error" id="errorNumFactura"></ul>
+                <input type="text"name="razonSocial" id="razonSocial" placeholder="Razon Social" required>
+
+                <input type="text"name="nomEmpresa" id="nomEmpresa" placeholder="nombre de la empresa" required>
+ 
+                <input type="text"name="direccion" id="direccion" placeholder="direccion" required>
+               
+                <input type="text" name="ciudad" id="ciudad" placeholder="ciudad" required> 
+
+              <input type="text" name="codigoPostal" id="codigoPostal" placeholder="codigo Postal" required>
+
+              <input type="text" name="telefono" id="telefono" placeholder="telefono" required>
+              <ul class="error" id="errorTelefono"></ul>
+              <input type="number" name="importe" id="importe" placeholder="importe" required>
+              <ul class="error" id="errorImporte"></ul>
+              </div>
+                <ul class="error" id="error"></ul>
+                <button type="submit" class="btn btn-primary btn-lg" value="Registrarse" onclick="validar()" >Registrar</button> 
+              </div>
+          </form> 
+          <script src="registroFactura.js"></script>           
+        </header> 
+      </header> 
+    </body>
+</html>
